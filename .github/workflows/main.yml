@@ -36,6 +36,11 @@ jobs:
           restore-keys: |
             Library-
 
+      # License activation
+      - name: Unity - Activate
+        uses: game-ci/unity-activate@v1.3
+
+
       # Test
       - name: Run tests
         uses: game-ci/unity-test-runner@v2
